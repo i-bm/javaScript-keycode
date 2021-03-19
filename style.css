@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+    background-color: #f3f2ef;
+    color: rgb(93, 94, 94);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+}
+
+.message {
+    padding: .4rem .9rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+}
+
+.keycode {
+    font-size: 20rem;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.card {
+    width: 300px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+    margin-right: 5%;
+    margin-bottom: 1rem;
+    /* cursor: pointer; */
+    transition: all 0.3s ease-out;
+}
+
+.card .card-title {
+    background-color: #e40824;
+    color: #fff;
+    padding: .4rem;
+    font-size: 1.2rem;
+}
+
+.card-title small {
+    font-size: .8rem;
+}
+
+.card .event-key,
+.event-which,
+.event-keycode {
+    padding: .4rem;
+    font-size: 2rem;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+        0 24px 46px rgba(220, 233, 255, 0.48);
+}
+
+
+@media (max-width: 600px) {
+    .card {
+        flex: 100%;
+        max-width: 100%;
+        margin: 1rem;
+    }
+
+
+}
